@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "blaise-log-investigation"
+version = "0.1.0"
+description = "A small project for digging into log queries"
+authors = ["Tom Oram <tom.oram@armakuni.com>"]
+readme = "README.md"
+packages = [{include = "blaise_log_investigation"}]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+notebook = "^6.5.4"
+pandas = "^2.0.1"
+google-cloud-logging = "^3.5.0"
+jupyter = "^1.0.0"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -5,6 +5,7 @@ description = "A small project for digging into log queries"
 authors = ["Blaise Team"]
 readme = "README.md"
 packages = [{include = "blaise_log_investigation"}]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "~3.13"

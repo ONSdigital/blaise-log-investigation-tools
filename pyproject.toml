@@ -2,12 +2,12 @@
 name = "blaise-log-investigation"
 version = "0.1.0"
 description = "A small project for digging into log queries"
-authors = ["Tom Oram <tom.oram@armakuni.com>"]
+authors = ["Blaise Team"]
 readme = "README.md"
 packages = [{include = "blaise_log_investigation"}]
 
 [tool.poetry.dependencies]
-python = "~3.9"
+python = "~3.13"
 notebook = "^6.5.4"
 pandas = "^2.0.1"
 google-cloud-logging = "^3.5.0"

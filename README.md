@@ -35,17 +35,20 @@ A Python and Jupyter project for investigating GCP logs.
 
 ## Current Notebooks
 
-- `notebooks/warning_and_error_count_by_resource.ipynb`
+`notebooks/warning_and_error_count_by_resource.ipynb`
+
 - Queries Cloud Logging for warning and error entries.
 - Supports flexible time windows (`lookback_hours` or explicit start/end timestamps).
 - Plots separate warning and error charts by resource type.
 
-- `notebooks/error_count_over_time.ipynb`
+`notebooks/error_count_over_time.ipynb`
+
 - Queries Cloud Logging for error entries only.
 - Supports flexible time windows (`lookback_hours` or explicit start/end timestamps).
 - Plots a scatter chart of error count over time.
 
-- `notebooks/nisra_case_updates_over_time.ipynb`
+`notebooks/nisra_case_updates_over_time.ipynb`
+
 - Queries Cloud Logging for NISRA case update entries.
 - Supports flexible time windows (`lookback_hours` or explicit start/end timestamps).
 - Plots scatter charts for all entries and subsets containing `opn` and `lms`.

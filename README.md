@@ -1,4 +1,4 @@
-# Blaise Log Investigation Tools 🔎
+# Blaise GCP Log Investigation 🔎
 
 Python Jupyter Notebook for GCP log investigation.
 

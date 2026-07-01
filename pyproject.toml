@@ -1,19 +1,42 @@
-[tool.poetry]
-package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.13"
-notebook = "^7.4.7"
-pandas = "^2.0.1"
-google-cloud-logging = "^3.12.1"
-jupyter = "^1.1.1"
-matplotlib = "^3.7.1"
-grpcio = "^1.70.0"
-protobuf = ">=4.25.8"
-requests = "^2.32.4"
-urllib3 = "2.5.0"
-tornado = "^6.5"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[project]
+name = "blaise-log-investigation-tools"
+version = "0.0.0"
+requires-python = ">=3.13"
+dependencies = [
+    "notebook>=7.6.0",
+    "pandas>=3.0.3",
+    "google-cloud-logging>=3.16.0",
+    "google-auth>=2.55.1",
+    "matplotlib>=3.11.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.20",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "pyright>=1.1.400",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "PL", "C90", "SIM", "RUF", "Q"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=helpers --cov-report=term-missing --cov-fail-under=100"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.13"
+include = ["src", "tests"]
+exclude = ["notebooks"]
+reportUnusedImport = true
+reportUnusedVariable = true

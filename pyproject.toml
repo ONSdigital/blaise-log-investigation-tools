@@ -20,9 +20,9 @@ dependencies = [
 [dependency-groups]
 dev = [
     "ruff>=0.15.20",
-    "pytest>=8.4.2",
-    "pytest-cov>=7.0.0",
-    "pyright>=1.1.400",
+    "pytest (>=9.1.1)",
+    "pytest-cov (>=7.1.0)",
+    "pyright (>=1.1.411)",
 ]
 
 [tool.ruff.lint]

@@ -1,6 +1,6 @@
 # Blaise Log Investigation Tools 🔎
 
-A Python and Jupyter project for investigating GCP logs.
+Python Jupyter Notebook for GCP log investigation.
 
 ## Repository Layout
 

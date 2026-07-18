@@ -34,5 +34,11 @@ lint-fix:
 typecheck:
 	poetry run pyright
 
+deptry:
+	poetry run deptry .
+
+vulture:
+	poetry run vulture .
+
 test:
 	poetry run pytest
